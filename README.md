@@ -9,7 +9,7 @@ Após isso, rode a aplicação:
 npm start
 ```
 
-Para iniciar os teste use:
+Para iniciar os testes use:
 ```sh
 npm test
 ```
