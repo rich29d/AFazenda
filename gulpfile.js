@@ -25,7 +25,7 @@ gulp.task("script", function() {
         presets: ["@babel/env"]
       })
     )
-    .pipe(uglify())    
+    //.pipe(uglify())    
     .pipe(gulp.dest(baseDir + "/javascripts"));
 });
 
