@@ -15,9 +15,9 @@
   
   .Header--title
     font-size 30px
-    background var(--light)
+    background $light
     text-align right
-    color var(--grey)
+    color $grey
     line-height: 52px
     border-radius 3px
     width 247px
@@ -29,7 +29,7 @@
     align-items baseline    
 
   .Body
-    background var(--light)
+    background $light
     border-radius 3px
     display none
     width 100%
@@ -49,26 +49,26 @@
     width 100%
 
   &:nth-child(2n)
-    background var(--light-secundary)
+    background $light-secundary
 
   +prefix-classes('Person__')
     .Photo
       .Image
         padding 29px
         border-radius 50%
-        border 4px solid var(--primary)
+        border 4px solid $primary
         box-sizing border-box;
         background center center / cover
         position relative
 
         .Position
-          color var(--secundary)
+          color $secundary
           position absolute
           bottom -7px
           right -4px
           width 19px
           height 19px
-          background var(--light)
+          background $light
           border-radius 50%
           border 1.5px solid currentColor
           line-height 18px
@@ -85,13 +85,13 @@
 
       .Text--name
         font-size 18px
-        color var(--primary)
+        color $primary
 
       .Text--description
-        color var(--grey-light)
+        color $grey-light
 
   &:hover
-    background var(--primary)
+    background $primary
 
     @media screen and (min-width 689px)
       .Tooltip
@@ -101,13 +101,13 @@
 
     +prefix-classes('Person__')
       .Image
-        border-color var(--light)
+        border-color $light
 
       .Text--name
-        color var(--light)
+        color $light
 
       .Text--description
-          color var(--scarlet)
+          color $scarlet
 
   @media screen and (min-width 689px)
     .Tooltip
@@ -119,7 +119,7 @@
       transform translateY(-50%)
       margin-left 0
       text-align: center
-      background var(--light)
+      background $light
       border-radius 3px
       opacity 0
       transition all .2s ease
@@ -129,7 +129,7 @@
         content ''
         width 12px
         height 12px
-        background var(--light)
+        background $light
         border-radius 3px
         transform rotate(45deg) translateY(-50%)
         top 48%
@@ -138,7 +138,7 @@
 
 
       .Tooltip__Percentage
-        color var(--grey-light)
+        color $grey-light
         font-size 24px
         line-height 33px
 
@@ -154,8 +154,8 @@
 
       span
         line-height 18px
-        background var(--primary)
-        color var(--light)
+        background $primary
+        color $light
         font-size 10px
         display block
         width 100%
@@ -175,14 +175,14 @@
     .Tooltip
       span
         margin-right 5px
-        color var(--secundary)
+        color $secundary
 
     .Tooltip__Percentage
       display flex
       flex-grow unset
       margin-right 8px
       margin-top 2px
-      color var(--primary)
+      color $primary
       font-size 10px
       font-weight normal
 
@@ -190,19 +190,19 @@
       .Tooltip
         span
           margin-right 5px
-          color var(--scarlet)
+          color $scarlet
 
       .Tooltip__Percentage
-        color var(--light)
+        color $light
 
 +prefix-classes('Empty__')
   .Title
     font-size: 30px
-    color var(--grey)
+    color $grey
     margin-top 10px
 
   .Text
     margin: 5px 0 10px
-    color var(--secundary)
+    color $secundary
     padding 0 15px
     font-size 15px
