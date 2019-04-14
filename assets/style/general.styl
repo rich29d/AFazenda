@@ -1,0 +1,53 @@
+:root
+  --primary #BA3638
+  --secundary #656363
+  --grey #272727
+  --grey-light #909090
+  --scarlet #330D0E
+  --light #FFF
+  --light-secundary #f2f3f2
+
+@font-face 
+  font-family Montserrat
+  src url(./fonts/Montserrat-Bold.ttf)
+  font-weight bold
+
+@font-face 
+  font-family Montserrat
+  src url(./fonts/Montserrat-SemiBold.ttf)
+
+body
+  background-color #222
+  text-align center
+  font-size 12px
+  font-family "Arial, sans-serif"
+  font-family Montserrat
+
+.Bold
+  font-family Montserrat
+  font-weight bold
+
+.Flex
+  display flex
+  align-items center
+
+.Grow > *
+  flex-grow 1
+
+@keyframes fadinToLeft
+  from
+    opacity 0
+    transform translateX(30px)
+  
+  to
+    opacity 1
+    transform translateX(0)
+
+@keyframes fadinToBottom
+  from
+    opacity 0
+    transform translateY(-30px)
+  
+  to
+    opacity 1
+    transform translateY(0)
