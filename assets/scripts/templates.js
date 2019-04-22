@@ -1,4 +1,4 @@
-var template = {
+const template = {
   person: function (person) {
     return `
       <div
@@ -61,3 +61,4 @@ var template = {
   }
 }
 
+module.exports = template;

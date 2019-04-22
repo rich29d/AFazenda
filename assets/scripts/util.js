@@ -15,6 +15,8 @@ function request(url, callback) {
       const data = JSON.parse(this.responseText);
 
       callback && callback(data);
+
+      return data;
     }
   };
 }
@@ -23,4 +25,10 @@ function getPercentage(value1, value2) {
     const percentage = value1 ? 100 / value2 * value1 : 0;
 
     return percentage.toFixed(0);
+}
+
+module.exports = {
+  append,
+  request,
+  getPercentage,
 }

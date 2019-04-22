@@ -1,3 +1,6 @@
+const template = require('./templates');
+const { request, getPercentage, append } = require('./util');
+
 function loadListPerson() {
   request("../fazenda.json", resp => {
     if (Array.isArray(resp.data) && resp.data.length > 0) {
